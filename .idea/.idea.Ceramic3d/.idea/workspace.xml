@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f4b98611-a24d-4a45-9341-95f5e9f26c79" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/Test.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/MatrixSolution/MatrixOperations.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/MatrixSolution/JsonLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/MatrixVisualizer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/MatrixDataLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/CubesContainer.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="2v7awYCgEu0NHFL3QaCtvVzatmf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4b98611-a24d-4a45-9341-95f5e9f26c79" name="Default Changelist" comment="" />
+      <created>1743498810167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743498810167</updated>
+      <workItem from="1743498822789" duration="1555000" />
+      <workItem from="1743680186610" duration="6201000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

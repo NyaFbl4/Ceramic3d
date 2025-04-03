@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Public\Repos\!Testovoe\Ceramic3d" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Ceramic3d" t="Include">
+          <e p="Resources" t="Include">
+            <e p="JSON" t="Include">
+              <e p="model.json" t="Include" />
+              <e p="space.json" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="CubesContainer.cs" t="Include" />
+            <e p="MatrixDataLoader.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Ceramic3d.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Ceramic3d.1257413861.00" t="ExcludeRecursive" />
+  </component>
+</project>
