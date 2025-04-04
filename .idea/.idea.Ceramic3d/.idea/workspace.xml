@@ -21,6 +21,7 @@
       <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/System/SceneInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/MatrixDataLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/MatrixSolver.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/Matrix/MatrixJsonExample.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2v7awYCgEu0NHFL3QaCtvVzatmf" />
@@ -45,7 +46,7 @@
       <updated>1743498810167</updated>
       <workItem from="1743498822789" duration="1555000" />
       <workItem from="1743680186610" duration="6201000" />
-      <workItem from="1743750308962" duration="10100000" />
+      <workItem from="1743750308962" duration="10606000" />
     </task>
     <servers />
   </component>
