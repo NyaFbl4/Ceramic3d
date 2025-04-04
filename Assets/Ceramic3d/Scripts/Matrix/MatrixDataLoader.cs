@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 namespace Ceramic3d
 {
-    public class MatrixDataLoader : MonoBehaviour
+    public class MatrixDataLoader
     {
         [System.Serializable]
         private class MatrixJsonWrapper
@@ -31,27 +32,26 @@ namespace Ceramic3d
             }
         }
 
-        [Header("JSON Files")]
-        public TextAsset modelJson;
-        public TextAsset spaceJson;
+        private readonly JsonConfig _jsonConfig;
+
 
         [Space]
         [Header("Loaded Data")]
         [SerializeField] private List<Matrix4x4> _modelMatrices = new List<Matrix4x4>();
         [SerializeField] private List<Matrix4x4> _spaceMatrices = new List<Matrix4x4>();
-
-        private void Start()
+        
+        public  MatrixDataLoader(JsonConfig config)
         {
-            //LoadAllMatrices();
+            _jsonConfig = config;
         }
         
-        public void LoadAllMatrices()
+        public void LoadAllMatrixes()
         {
-            _modelMatrices = LoadMatricesFromJson(modelJson);
-            _spaceMatrices = LoadMatricesFromJson(spaceJson);
+            _modelMatrices = LoadMatricesFromJson(_jsonConfig.ModelJson);
+            _spaceMatrices = LoadMatricesFromJson(_jsonConfig.SpaceJson);
 
-            Debug.Log($"Loaded {_modelMatrices?.Count ?? 0} model matrices");
-            Debug.Log($"Loaded {_spaceMatrices?.Count ?? 0} space matrices");
+            Debug.Log($"Loaded {_modelMatrices?.Count ?? 0} model matrixes");
+            Debug.Log($"Loaded {_spaceMatrices?.Count ?? 0} space matrixes");
         }
         
         public List<Matrix4x4> GetModelMatrix()
@@ -68,19 +68,16 @@ namespace Ceramic3d
         {
             if (jsonFile == null)
             {
-                Debug.LogError("JSON file reference is null!");
                 return new List<Matrix4x4>();
             }
 
             try
             {
-                // Добавляем обертку для корректного парсинга
                 string wrappedJson = $"{{\"matrices\":{jsonFile.text}}}";
                 MatrixJsonWrapper wrapper = JsonUtility.FromJson<MatrixJsonWrapper>(wrappedJson);
 
                 if (wrapper?.matrices == null)
                 {
-                    Debug.LogError("Failed to parse JSON - invalid format");
                     return new List<Matrix4x4>();
                 }
 
@@ -94,7 +91,6 @@ namespace Ceramic3d
             }
             catch (Exception e)
             {
-                Debug.LogError($"Error loading matrices: {e.Message}");
                 return new List<Matrix4x4>();
             }
         }

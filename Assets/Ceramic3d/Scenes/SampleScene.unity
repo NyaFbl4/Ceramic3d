@@ -131,7 +131,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 526491672}
-  - component: {fileID: 526491673}
   - component: {fileID: 526491674}
   m_Layer: 0
   m_Name: MatrixVisualizer
@@ -155,22 +154,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &526491673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526491670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 360851bd3d9f68b4bbb7f9437d330547, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  modelJson: {fileID: 4900000, guid: 7c08dff64ee36764e8c7c51904c99fc8, type: 3}
-  spaceJson: {fileID: 4900000, guid: ead5d47ca13ca284baf4ba9d0f31d4c3, type: 3}
-  _modelMatrices: []
-  _spaceMatrices: []
 --- !u!114 &526491674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a2f0566af0afd41825e984c96afe7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _matrixDataLoader: {fileID: 526491673}
   _cubePrefab: {fileID: 8282654853988047221, guid: c7396b7cd439f474bb5f409067b29afb, type: 3}
   _cubes: []
 --- !u!1 &705507993
@@ -381,7 +363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 993486841}
-  - component: {fileID: 993486840}
+  - component: {fileID: 993486842}
   m_Layer: 0
   m_Name: EntryPoint
   m_TagString: Untagged
@@ -389,21 +371,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &993486840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993486839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65e490c1e1585ef4cbdea621ded2ae8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _matrixDataLoader: {fileID: 526491673}
-  _cubesContainer: {fileID: 526491674}
-  _offset: []
 --- !u!4 &993486841
 Transform:
   m_ObjectHideFlags: 0
@@ -418,6 +385,64 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &993486842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993486839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a14b5d68dda42d64d836c3c8c1b9dbaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _offset: []
+--- !u!1 &1340413293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1340413295}
+  - component: {fileID: 1340413294}
+  m_Layer: 0
+  m_Name: SceneInstaller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1340413294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340413293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d7c63cb3b6e755429d676ddc56cca07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cubesContainer: {fileID: 526491674}
+--- !u!4 &1340413295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340413293}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1810341873}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1810341871
 GameObject:
@@ -448,8 +473,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89715ad69b973a14899afa2c6730b30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableObjectInstallers: []
-  _monoInstallers: []
+  _scriptableObjectInstallers:
+  - {fileID: 11400000, guid: 27d5015091b563d498b2f6da6e95189b, type: 2}
+  _monoInstallers:
+  - {fileID: 1340413294}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -479,7 +506,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1340413295}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
