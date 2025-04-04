@@ -10,24 +10,16 @@ namespace Ceramic3d
         [SerializeField] private GameObject _cubePrefab;
         [SerializeField] private List<GameObject> _cubes;
 
-        private void Start()
+        public void SpawnCubes()
         {
-
-        }
-
-        private void Update()
-        {
-            if (_cubes.Count == 0)
+            var spaceMatrices = _matrixDataLoader.GetSpaceMatrix();
+                
+            foreach (var matrix in spaceMatrices)
             {
-                var spaceMatrices = _matrixDataLoader.GetSpaceMatrix();
+                GameObject cube = Instantiate(_cubePrefab);
+                cube.transform.position = matrix.GetPosition();
                 
-                foreach (var matrix in spaceMatrices)
-                {
-                    GameObject cube = Instantiate(_cubePrefab);
-                    cube.transform.position = matrix.GetPosition();
-                
-                    _cubes.Add(cube);
-                }
+                _cubes.Add(cube);
             }
         }
     }

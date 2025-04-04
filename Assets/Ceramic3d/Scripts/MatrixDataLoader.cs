@@ -42,9 +42,18 @@ namespace Ceramic3d
 
         private void Start()
         {
-            LoadAllMatrices();
+            //LoadAllMatrices();
         }
+        
+        public void LoadAllMatrices()
+        {
+            _modelMatrices = LoadMatricesFromJson(modelJson);
+            _spaceMatrices = LoadMatricesFromJson(spaceJson);
 
+            Debug.Log($"Loaded {_modelMatrices?.Count ?? 0} model matrices");
+            Debug.Log($"Loaded {_spaceMatrices?.Count ?? 0} space matrices");
+        }
+        
         public List<Matrix4x4> GetModelMatrix()
         {
             return _modelMatrices;
@@ -53,15 +62,6 @@ namespace Ceramic3d
         public List<Matrix4x4> GetSpaceMatrix()
         {
             return _spaceMatrices;
-        }
-        
-        private void LoadAllMatrices()
-        {
-            _modelMatrices = LoadMatricesFromJson(modelJson);
-            _spaceMatrices = LoadMatricesFromJson(spaceJson);
-
-            Debug.Log($"Loaded {_modelMatrices?.Count ?? 0} model matrices");
-            Debug.Log($"Loaded {_spaceMatrices?.Count ?? 0} space matrices");
         }
 
         private List<Matrix4x4> LoadMatricesFromJson(TextAsset jsonFile)
@@ -98,14 +98,5 @@ namespace Ceramic3d
                 return new List<Matrix4x4>();
             }
         }
-
-        #if UNITY_EDITOR
-        [ContextMenu("Test Loading")]
-        private void TestLoading()
-        {
-            LoadAllMatrices();
-            Debug.Log("Matrix loading test completed");
-        }
-        #endif
     }
 }
