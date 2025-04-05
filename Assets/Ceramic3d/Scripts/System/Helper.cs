@@ -7,19 +7,21 @@ namespace Ceramic3d
 {
     public class Helper : MonoBehaviour
     {
+        private MatrixJsonExample _matrixJsonExample;
         private MatrixDataLoader _matrixDataLoader;
         private CubesContainer _cubesContainer;
         private MatrixSolver _matrixSolver;
 
-        [SerializeField] private List<Matrix4x4> _offset;
+        private List<Matrix4x4> _offset;
         
         [Inject]
         public void Container(MatrixDataLoader matrixDataLoader, CubesContainer cubesContainer,
-            MatrixSolver matrixSolver)
+            MatrixSolver matrixSolver, MatrixJsonExample matrixJsonExample)
         {
             _matrixDataLoader = matrixDataLoader;
             _cubesContainer = cubesContainer;
             _matrixSolver = matrixSolver;
+            _matrixJsonExample = matrixJsonExample;
         }
 
         [Button]
@@ -34,6 +36,12 @@ namespace Ceramic3d
         {
             _offset = _matrixSolver.FindAllOffsets(
                 _matrixDataLoader.GetModelMatrix(), _matrixDataLoader.GetSpaceMatrix());
+        }
+
+        [Button]
+        private void SaveMatrix()
+        {
+            _matrixJsonExample.SaveMatrixToJson(_offset);   
         }
     }
 }

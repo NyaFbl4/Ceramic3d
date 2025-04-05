@@ -16,6 +16,10 @@ namespace Ceramic3d
                 .AsSingle();
 
             Container
+                .Bind<MatrixJsonExample>()
+                .AsSingle();
+
+            Container
                 .Bind<CubesContainer>()
                 .FromInstance(_cubesContainer)
                 .AsSingle();

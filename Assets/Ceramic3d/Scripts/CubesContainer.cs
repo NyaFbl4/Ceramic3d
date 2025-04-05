@@ -7,8 +7,10 @@ namespace Ceramic3d
 {
     public class CubesContainer : MonoBehaviour
     {
+        [SerializeField] private Transform _cubesContainer;
         [SerializeField] private GameObject _cubePrefab;
-        [SerializeField] private List<GameObject> _cubes;
+        
+        [SerializeField] private List<GameObject> _cubes = new();
         
         private MatrixDataLoader _matrixDataLoader;
 
@@ -25,7 +27,7 @@ namespace Ceramic3d
             
             foreach (var matrix in spaceMatrices)
             {
-                GameObject cube = Instantiate(_cubePrefab);
+                GameObject cube = Instantiate(_cubePrefab, _cubesContainer);
                 cube.transform.position = matrix.GetPosition();
                 
                 _cubes.Add(cube);

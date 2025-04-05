@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Public\Repos\!Testovoe\Ceramic3d" t="IncludeRecursive">
+    <e p="C:\Users\lomok\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\lomok\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Ceramic3d.-1225818811.00" t="ExcludeRecursive" />
+    <e p="C:\Users\lomok\Desktop\Unity\Проекты\Ceramic3d" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -10,6 +12,7 @@
           <e p="Resources" t="Include">
             <e p="JSON" t="Include">
               <e p="model.json" t="Include" />
+              <e p="Offset.json" t="Include" />
               <e p="space.json" t="Include" />
             </e>
           </e>
@@ -18,7 +21,9 @@
             <e p="JsonConfig.cs" t="Include" />
             <e p="Matrix" t="Include">
               <e p="MatrixDataLoader.cs" t="Include" />
+              <e p="MatrixJson.cs" t="Include" />
               <e p="MatrixJsonExample.cs" t="Include" />
+              <e p="MatrixJsonWrapper.cs" t="Include" />
               <e p="MatrixSolver.cs" t="Include" />
             </e>
             <e p="System" t="Include">
@@ -982,7 +987,5 @@
       <e p="Zenject-UnitTests-Editor.csproj" t="IncludeRecursive" />
       <e p="Zenject.csproj" t="IncludeRecursive" />
     </e>
-    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Ceramic3d.1257413861.00" t="ExcludeRecursive" />
   </component>
 </project>

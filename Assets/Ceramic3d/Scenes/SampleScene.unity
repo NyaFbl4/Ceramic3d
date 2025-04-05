@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 526491672}
   - component: {fileID: 526491674}
   m_Layer: 0
-  m_Name: MatrixVisualizer
+  m_Name: CubesContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a2f0566af0afd41825e984c96afe7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cubesContainer: {fileID: 526491672}
   _cubePrefab: {fileID: 8282654853988047221, guid: c7396b7cd439f474bb5f409067b29afb, type: 3}
   _cubes: []
 --- !u!1 &705507993
@@ -365,7 +366,7 @@ GameObject:
   - component: {fileID: 993486841}
   - component: {fileID: 993486842}
   m_Layer: 0
-  m_Name: EntryPoint
+  m_Name: Helper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -398,7 +399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a14b5d68dda42d64d836c3c8c1b9dbaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _offset: []
 --- !u!1 &1340413293
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +515,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1810341873}
+  - {fileID: 993486841}
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 993486841}
   - {fileID: 526491672}

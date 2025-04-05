@@ -13,15 +13,18 @@
       <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/MatrixSolution/MatrixOperations.cs" />
       <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/MatrixSolution/JsonLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/MatrixVisualizer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/JsonConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/System/ConfigInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/EntryPoint.cs" />
-      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/System/Helper.cs" />
-      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/CubesContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/System/SceneInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/MatrixDataLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/MatrixSolver.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/Matrix/MatrixJsonWrapper.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/Matrix/MatrixJson.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/System/SceneInstaller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/JsonConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/System/Helper.cs" />
       <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/Matrix/MatrixJsonExample.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/Matrix/MatrixDataLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Ceramic3d/Scripts/CubesContainer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2v7awYCgEu0NHFL3QaCtvVzatmf" />
@@ -30,11 +33,32 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -53,6 +77,8 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
